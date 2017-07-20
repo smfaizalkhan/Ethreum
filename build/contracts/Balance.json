@@ -1,0 +1,39 @@
+{
+  "contract_name": "Balance",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "amount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x60606040523415600b57fe5b6040516020806100a483398101604052515b60008190555b505b6071806100336000396000f300606060405263ffffffff60e060020a600035041663aa8c217c81146020575bfe5b3415602757fe5b602d603f565b60408051918252519081900360200190f35b600054815600a165627a7a72305820df678a85e02af247eeb9329c44f7ec995a92907d6b1e8cdc61e73885b2478d000029",
+  "networks": {
+    "1092": {
+      "events": {},
+      "links": {},
+      "address": "0x8aecfb4b2d811216795a1c4521b9cc3a1fa1f4b8",
+      "updated_at": 1500488109188
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500488109188
+}
