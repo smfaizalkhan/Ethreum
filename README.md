@@ -44,7 +44,10 @@ Setting up a private BlockChain Network using Ethereum
 		}  
 
        
-                 chainId is the ID for the Chain N/W,nonce is for POW purpose nonce and mixhash are used to prove some computataion    			 has be done to solve mathematical  problem as mentioned in yellow Paper,ParentHash is 256 bit hash and in case of 			 genesis file it is set to 0,difficulty is set to minimal 
+                 chainId is the ID for the Chain N/W,
+		 nonce is for POW purpose nonce and mixhash are used to prove some computataion has be done to solve  				 mathematical  problem as mentioned in yellow Paper,
+		 ParentHash is 256 bit hash and in case of  genesis file it is set to 0,
+		 difficulty is set to minimal 
 
    
 4) Instructions for dataDir 
@@ -54,14 +57,14 @@ Setting up a private BlockChain Network using Ethereum
       a) Copy the gensis.json file into ethereum_home in both the machines.
       b) Initialise the block -- sudo geth --datadir "$ethereum_home/node1" init "$ethereum_home/genesis.json
       c) Start the N/W mentioning  port and specify networkid
-             sudo geth --datadir "$ethereum_home/node1" --port 30304 --nodiscover --rpc --rpcport 8545 --rpccorsdomain "*"  -networkid 		     1092 console
+             sudo geth --datadir "$ethereum_home/node1" --port 30304 --nodiscover --rpc --rpcport 8545 --rpccorsdomain "*"  			-networkid   1092 console
       d)In the 2nd machine console type admin.nodeInfo.enode and copy the enode and replace [:] with ip address of the machine
             
-		"enode://6b17a2de281cb1aebbc3dd065472c0f9e293c31074b9ba3850003a5b08a55a0e0563ff08c4e7da9580caac2e8881611ed9cdbb4fd593e7638878d5e4586cf8fd@192.168.0.118:30304?			 discport=0"
+		"enode://6b17a2de281cb1aebbc3dd065472c0f9e293c31074b9ba3850003a5b08a55a0e0563ff08c4e7da9580caac2e8881611ed9cdbb4fd593e7638878d5e4586cf8fd@192.168.0.118:30304?discport=0"
 
      e) Add second machine as peer in first node
          
-            admin.addPeer("enode://6b17a2de281cb1aebbc3dd065472c0f9e293c31074b9ba3850003a5b08a55a0e0563ff08c4e7da9580caac2e8881611ed9cdbb4fd593e7638878d5e4586cf8fd@192.168.0.118:30304?			 discport=0")
+            admin.addPeer("enode://6b17a2de281cb1aebbc3dd065472c0f9e293c31074b9ba3850003a5b08a55a0e0563ff08c4e7da9580caac2e8881611ed9cdbb4fd593e7638878d5e4586cf8fd@192.168.0.118:30304?discport=0")
 
      d)Verifying the Peers
       
@@ -121,7 +124,7 @@ Setting up a private BlockChain Network using Ethereum
 
            deployer.deploy(Balance);        comment other lines
 
-   c) compile it using the command truffle compile
+   c) compile it using the command "truffle compile"
 
    d) Depoy file to deploy the smart contract is truffle.js ,sample file as below
 
@@ -136,7 +139,7 @@ Setting up a private BlockChain Network using Ethereum
 		};
 
 
-         Command to deploy is truffle migrate
+   e)  Command to deploy is "truffle migrate"     
 
 
  
